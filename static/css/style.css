@@ -7,6 +7,10 @@
   align-items: center;
 }
 
+.highlight {
+  font-weight: lighter;
+}
+
 #typewriter {
   font-size: 60px;
   font-family: "B612", sans-serif;
