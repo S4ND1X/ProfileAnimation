@@ -1,5 +1,17 @@
 #particles-js {
-  width: 100%;
   height: 100vh;
-  background-color: aqua;
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#typewriter {
+  font-size: 60px;
+  font-family: "B612", sans-serif;
+  font-weight: 700;
+  margin: 350px 250px;
+  position: absolute;
+  color: #b79eb9;
 }

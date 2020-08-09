@@ -12,11 +12,38 @@
 
 <body>
 
+    <div id="particles-js">
+        <div id="typewriter"></div>
+    </div>
 
-    <div id="particles-js"></div>
 
-    <script src="./static/js/particles.js"></script>
-    <script src="./static/js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+        particlesJS.load("particles-js", "./static/json/particles.json", function () {
+            console.log("particles.json loaded");
+        });
+        const instance = new Typewriter('#typewriter', {
+            loop: true
+        });
+        instance.typeString("Hi There!")
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString('I am Jorge Sanchez.')
+            .pauseFor(1000)
+            .deleteChars(14)
+            .typeString('an aspiring<br>Software Engineer.')
+            .pauseFor(1000)
+            .deleteChars(28)
+            .typeString('currently learning<br>Fullstack Development.')
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString('Check out my work at<br>github.com/S4ND1X')
+            .pauseFor(1000)
+            .deleteAll()
+            .start();
+    </script>
 
 </body>
 
